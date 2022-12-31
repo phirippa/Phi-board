@@ -2,7 +2,7 @@
 #include <PubSubClient.h>
 #define USER_LED  D0
 const char* ssid = "Ria2G";
-const char* password = "12345678";
+const char* password = "12345679";
 
 const char* userId = "mqtt_ship";
 const char* userPw = "1234";
