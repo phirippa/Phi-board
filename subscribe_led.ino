@@ -18,7 +18,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   strncpy(messageBuf, (char*)payload, length);
   messageBuf[length] = '\0';
   String ledState = String(messageBuf);
-  Serial.println("Payload: "+ ledState + "\n\n");
+  Serial.println("Payload: "+ ledState + "\n");
   
   if( ledState == "1"  ){
     digitalWrite(USER_LED, LOW);
