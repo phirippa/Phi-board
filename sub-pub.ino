@@ -64,9 +64,9 @@ void setup() {
  }
 
 void loop() {
-  client.loop();
-
   char buf[20];
+  client.loop();
+  
   String strLuxValue =  String( lightMeter.readLightLevel() );
   strLuxValue.toCharArray(buf, strLuxValue.length() );
   client.publish(topicPub, buf);
